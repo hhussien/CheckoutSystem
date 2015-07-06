@@ -17,6 +17,7 @@ For Step One:
 4. The Output will look like below in the response  body:
 	TotalPrice=0.85
 	
+5. As Example of this step , fiddler session "StepOneSession.saz" is attached under: ~\CheckoutSystem\Fiddler	
 	
 If you like to test the demo from Visual Studio, do the followings:
 
@@ -51,7 +52,9 @@ For Step Two:
 	
 4. The Output will look like below in the response  body:
 	TotalPrice=2.3
-	
+
+5. As Example of this step , fiddler session "StepTwoSession.saz" is attached under: ~\CheckoutSystem\Fiddler
+		
 	
 If you like to test the demo from Visual Studio, do the followings:
 
