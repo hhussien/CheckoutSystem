@@ -1,0 +1,9 @@
+C:\Users\hitaf\Checkout system\CheckOutSystem\Domain.Tests\bin\Debug\Domain.Tests.dll
+C:\Users\hitaf\Checkout system\CheckOutSystem\Domain.Tests\bin\Debug\Domain.Tests.pdb
+C:\Users\hitaf\Checkout system\CheckOutSystem\Domain.Tests\obj\Debug\Domain.Tests.dll
+C:\Users\hitaf\Checkout system\CheckOutSystem\Domain.Tests\obj\Debug\Domain.Tests.pdb
+C:\Users\hitaf\Checkout system\CheckOutSystem\Domain.Tests\bin\Debug\Domain.Services.dll
+C:\Users\hitaf\Checkout system\CheckOutSystem\Domain.Tests\bin\Debug\Domain.DataAccess.dll
+C:\Users\hitaf\Checkout system\CheckOutSystem\Domain.Tests\bin\Debug\Domain.Services.pdb
+C:\Users\hitaf\Checkout system\CheckOutSystem\Domain.Tests\bin\Debug\Domain.DataAccess.pdb
+C:\Users\hitaf\Checkout system\CheckOutSystem\Domain.Tests\obj\Debug\Domain.Tests.csprojResolveAssemblyReference.cache

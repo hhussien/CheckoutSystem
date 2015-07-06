@@ -1,0 +1,9 @@
+C:\Users\hitaf\Checkout system\CheckOutSystem\Domain.DataAccess\bin\Debug\Domain.DataAccess.dll
+C:\Users\hitaf\Checkout system\CheckOutSystem\Domain.DataAccess\bin\Debug\Domain.DataAccess.pdb
+C:\Users\hitaf\Checkout system\CheckOutSystem\Domain.DataAccess\obj\Debug\Domain.DataAccess.dll
+C:\Users\hitaf\Checkout system\CheckOutSystem\Domain.DataAccess\obj\Debug\Domain.DataAccess.pdb
+C:\Users\hitaf\Checkout system\GitHubProjects\CheckoutSystem\Domain.DataAccess\bin\Debug\Domain.DataAccess.dll
+C:\Users\hitaf\Checkout system\GitHubProjects\CheckoutSystem\Domain.DataAccess\bin\Debug\Domain.DataAccess.pdb
+C:\Users\hitaf\Checkout system\GitHubProjects\CheckoutSystem\Domain.DataAccess\obj\Debug\Domain.DataAccess.csprojResolveAssemblyReference.cache
+C:\Users\hitaf\Checkout system\GitHubProjects\CheckoutSystem\Domain.DataAccess\obj\Debug\Domain.DataAccess.dll
+C:\Users\hitaf\Checkout system\GitHubProjects\CheckoutSystem\Domain.DataAccess\obj\Debug\Domain.DataAccess.pdb

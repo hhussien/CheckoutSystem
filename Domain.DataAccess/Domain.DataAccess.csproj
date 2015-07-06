@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8AF3D8C-C68F-4E67-826E-A45A1903CE69}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Domain.DataAccess</RootNamespace>
+    <AssemblyName>Domain.DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GetPrice\Entities\ItemPrice.cs" />
+    <Compile Include="GetPrice\Entities\ItemPriceCollection.cs" />
+    <Compile Include="GetPrice\Mangers\ItemsPriceCollectionManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Configurations\ConfigurationData.cs" />
+    <Compile Include="Configurations\Interfaces\IConfiguration.cs" />
+    <Compile Include="Configurations\Interfaces\IConfigurationCollection.cs" />
+    <Compile Include="Configurations\Interfaces\IConfigurationSet.cs" />
+    <Compile Include="Configurations\ConfigurationCollection.cs" />
+    <Compile Include="Configurations\ConfigurationFactory.cs" />
+    <Compile Include="Configurations\ConfigurationSet.cs" />
+    <Compile Include="Utilities\XmlSerialization\CustomSerializer.cs" />
+    <Compile Include="Utilities\XmlSerialization\SerializerFactory.cs" />
+    <Compile Include="Utilities\XmlSerialization\Serializers\BaseSerializer.cs" />
+    <Compile Include="Utilities\XmlSerialization\Serializers\CollectionSerializer.cs" />
+    <Compile Include="Utilities\XmlSerialization\Serializers\ISerializer.cs" />
+    <Compile Include="Utilities\XmlSerialization\Serializers\ObjectSerializer.cs" />
+    <Compile Include="Utilities\XmlSerialization\SerializerHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="GetPrice\Mappers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GetPrice\Configuration\Domain.DataAccess.GetPrice.Mangers.ItemsPriceCollectionManager.config">
+      <SubType>
+      </SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
