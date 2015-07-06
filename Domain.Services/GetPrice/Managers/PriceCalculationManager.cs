@@ -12,9 +12,10 @@ namespace Domain.Services.GetPrice.Managers
         /// CalculatePrice method will call the mappers to get the total price includes in the status data contract
         /// </summary>
         /// <param name="priceCalculationResource"> contains the list of items</param>
+        /// <param name="calculateOffer">default to calculate the price depends on the offer</param>
         /// <example>[ 111, 111, 222, 111 ] </example> 111 represnt apple barcode, 222 represent orange barcode for example
         /// <returns>PriceCalculationStatusResource</returns> 
-        public PriceCalculationStatusResource CalculatePrice(PriceCalculationResource priceCalculationResource)
+        public PriceCalculationStatusResource CalculatePrice(PriceCalculationResource priceCalculationResource, bool calculateOffer = false)
         {
             var priceCalculationStatusResource = new PriceCalculationStatusResource();
 
@@ -24,7 +25,14 @@ namespace Domain.Services.GetPrice.Managers
             {
                 //Call mapper to get total price
                 var priceCalculationMapper = new PriceCalculationMapper();
+                if (calculateOffer)
+                {
+                    priceCalculationStatusResource = priceCalculationMapper.GetPriceWithOffer(priceCalculationResource.Items);
+                }
+                else
+                {
                 priceCalculationStatusResource = priceCalculationMapper.GetPrice(priceCalculationResource.Items);
+                }
                 
             }
             catch (Exception ex)

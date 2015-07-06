@@ -38,6 +38,32 @@ namespace CheckOutSystem.Controllers.GetPrice
             }
             );
         }
-        
+        /// <summary>
+        /// Calculate price with offer (Post method)
+        /// </summary>
+        /// <param name="priceCalculationResource"></param>
+        /// <returns>HttpResponseMessage with calculated price with offer</returns>
+         [ActionName("Offer")]
+         [HttpPost]
+        public Task<HttpResponseMessage> GetPriceOffer(PriceCalculationResource priceCalculationResource)
+        {
+            return this.TryWork(async () =>
+            {
+                try
+                {
+                    //call PriceCalculationManager to calculate price of the passed data contract
+                    var priceCalculationManager = new PriceCalculationManager();
+                    var priceCalculationStatusResource = priceCalculationManager.CalculatePrice(priceCalculationResource,true);
+
+                    return Request.CreateResponse(HttpStatusCode.OK, priceCalculationStatusResource);
+
+                }
+                catch (Exception ex)
+                {
+                    return Request.CreateErrorResponse(HttpStatusCode.ExpectationFailed, ex);
+                }
+            }
+            );
+        }
     }
 }
